@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    background-color: #4b4b4b;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav li button {
+    border: 0px solid transparent;
+    background-color: #4b4b4b;
+    width: 20vw;
+    text-align: center;
+    color: white;
+    font-size: 20px
+}
+
+nav li button:hover {
+    background-color: #711313;
+}
+
+nav li button:focus {
+    background-color: #d30909;
+}
+
+.PaginaActiva {
+    background-color: #870909;
+    color: black;
+}

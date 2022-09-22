@@ -1,0 +1,230 @@
+/* esta clase  entrega el tamaño una seccion invisible la cual dimensiona la pagina*/
+
+.seccion {
+    width: 70%;
+    padding-left: 14.5%;
+    padding-right: 14.5%;
+}
+
+
+/* contenedor invisible para la seccion avisos(no hace nada, solo sirve para centrar y hacer el contenedor flexible) */
+
+.avisosContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* aca se definen los parametros para crear la zona visible de los avisos, el fondo y el redondeado de las esquinas */
+
+.avisos {
+    width: 65%;
+    background-color: #9e9898;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+}
+
+
+/* aca hacemos la ceja donde esta el titulo de la tarjeta avisos  */
+
+.avisos h1 {
+    background-color: #22745a;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+}
+
+
+/* esto es para eliminar los puntos de las listas */
+
+li {
+    list-style: none;
+}
+
+
+/* todo esto es para crear la grilla 2x2 de avisos */
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2 div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid2x2 div .left {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.grid2x2 div .right {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+
+/* la parte visible de la cosa */
+
+.box {
+    width: 25%;
+    height: 25%;
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+    background-color: #3fd9a8;
+    z-index: 1;
+    position: relative;
+}
+
+
+/* animacion charcha cuando pasas el cursor por arriba de una box */
+
+.box:hover {
+    background-color: #39c196;
+    border-radius: 30px 0 30px 0;
+}
+
+.box:active {
+    position: absolute;
+    background-color: #39c196;
+    border-radius: 30px 0 30px 0;
+    padding: 20px;
+    z-index: 2;
+    width: 42%;
+}
+
+
+/* contenedor de tarjetas noticias (no es visible) */
+
+.noticiasContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* lo visible de la cuestion noticias */
+
+.noticias {
+    width: 65%;
+    height: fit-content;
+    background-color: #9e9898;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.noticias h1 {
+    background-color: #962b0f;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+    position: relative;
+}
+
+.noticias img {
+    width: var(--imgSize);
+}
+
+.noticias ul {
+    display: inline-flex;
+}
+
+.tarjetaNoticia {
+    background-color: #FF7278;
+    width: 220px;
+    height: 220px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+    position: relative;
+    margin: 2px;
+    --imgSize: 200px;
+}
+
+.tarjetaNoticia:hover {
+    position: relative;
+    background-color: #C44B53;
+    overflow: visible;
+    padding: 20px;
+    z-index: 2;
+    width: 260px;
+    height: fit-content;
+    border-radius: 30px 0 30px 0;
+    --imgSize: 250px;
+}
+
+p {
+    width: auto;
+    height: 40px;
+}
+
+
+/* galeria de fotos */
+
+.galeriaContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.galeria {
+    width: 65%;
+    height: fit-content;
+    background-color: #9e9898;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.galeria h1 {
+    background-color: #e3a444;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 2%;
+}
+
+.galeria img {
+    width: var(--imgSize);
+}
+
+.galeria ul {
+    display: inline-flex;
+}
+
+.tarjetaGaleria {
+    background-color: #ECFFA6;
+    width: fit-content;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+    position: relative;
+    margin: 2px;
+    --imgSize: 200px;
+}
+
+.tarjetaGaleria:hover {
+    position: relative;
+    background-color: #ffc44c;
+    overflow: visible;
+    padding: 20px;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px 0 30px 0;
+    --imgSize: 300px;
+}

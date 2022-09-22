@@ -1,0 +1,59 @@
+.ContenedorNosotros {
+    max-width: 70%;
+    background-color: #9e9898;
+    padding: 0 5% 5% 5%;
+    border-radius: 30px 0 30px 0;
+    margin-left: 150px;
+    text-align: center;
+}
+
+.Mision li {
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.Mision h1 {
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    background-color: #22745a;
+    border-radius: 0 0 30px 30px;
+}
+
+.Vision li {
+    margin: 5px;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.Vision h1 {
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    background-color: #22745a;
+    border-radius: 0 0 30px 30px;
+}
+
+.Mision img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.Vision img {
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+.Sello h1 {
+    background-color: #bc3512;
+    border-radius: 0 0 30px 30px;
+    margin-left: 10px;
+}
